@@ -3,13 +3,47 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>HOME</title>
+    <title>MENSAGENS</title>
 
     <link rel="stylesheet" href="Css/StyleSheet.css" />
     <script type="text/javascript" src="Js/Script.js"></script>
 </head>
-<body>   
-  ccccccccccccccccccccccccccccccccccccccccccc
+<body>
+
+    <h1>ENVIE SUA MENSAGEM </h1>
+
+    <div id="Inputs">
+        <div id="divInputs">
+            <label id="Label"> NOME: </label>
+            <input type="text" id="_userName" maxlength="30" />
+        </div>
+        <div id="divInputs">
+            <label> SOBRENOME: </label>
+            <input type="text" id="_userSobrenome" />
+        </div>
+        <div id="divInputs">
+            <label> IDADE: </label>
+            <input type="number" id="_userIdade" />
+        </div>
+        <div id="divInputs">
+            <label>TITÚLO: </label>
+            <input type="text" id="_titulo" />
+        </div>
+        <div id="divInputs">
+            <label> MENSAGEM: </label>            
+        </div>
+        <div>
+        <textarea id="msg" style="width:400px; height:200px; font-size:15px;"></textarea>
+        </div>
+        <div id="divInputs">
+            <input type="radio" id="userMasculino" name="fav_sexo" value="MASCULINO">
+            <label for="masculino">MASCULINO</label>
+            <input type="radio" id="_" name="fav_sexo" value="FEMININO">
+            <label for="feminino">FEMININO</label><br>
+        </div>        
+    </div>
+
+
 
 </body>
 </html>
