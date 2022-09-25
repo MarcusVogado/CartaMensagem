@@ -24,3 +24,7 @@ h1 {
     color:darkslateblue;
     text-align:center;
 }
+.box0, .box {
+    margin: auto;
+    color: grey;
+}
