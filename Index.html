@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="Css/StyleSheet.css" />
     <script type="text/javascript" src="Js/Script.js"></script>
+
 </head>
 <body>
 
@@ -33,18 +34,35 @@
             <label> MENSAGEM: </label>
         </div>
         <div>
-            <textarea id="msg" style="width:400px; height:200px; font-size:15px;"></textarea>
+            <textarea id="msg" style="width:400px; height:200px; font-size:15px;" maxlength="200"></textarea>
         </div>
         <div id="divInputs">
             <input type="radio" id="userMasculino" name="fav_sexo" value="MASCULINO">
             <label for="masculino">MASCULINO</label>
             <input type="radio" id="_" name="fav_sexo" value="FEMININO">
             <label for="feminino">FEMININO</label><br>
+
+            <h1>ESCOLHA UMA IMAGEM DE FUNDO PARA SUA MENSAGEM</h1>
+            <label>
+                <input type="radio" name="imgSelect" value="_fundoAzul" checked>
+                <img src="Img/FundoAzul-Madeira.jpg" style="width:200px; height:150px;" alt="Option 1">
+            </label>
+            <label>
+                <input type="radio" name="imgSelect" value="_fundoBranco">
+                <img src="Img/FundoBranco-Red.jpg" alt="Option 2" style="width:200px; height:150px;">
+            </label>
+            <label>
+                <input type="radio" name="imgSelect" value="_garrafa">
+                <img src="Img/garrafa-fundo.jpg" alt="Option 3" style="width:200px; height:150px;">
+            </label>
+            <label>
+                <input type="radio" name="imgSelect" value="_textura">
+                <img src="Img/textura.jpg" alt="Option 3" style="width:200px; height:150px;">
+            </label>
+
         </div>
 
-        <h1>ESCOLHE UMA IMAGEM DE FUNDO</h1>
         
-
     </div>
     <h2>Este campo é diretamente automático</h2>
 

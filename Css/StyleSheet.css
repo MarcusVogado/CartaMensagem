@@ -2,10 +2,11 @@
     display: flex;
     border: 2px solid blue;
     flex-flow: column;
-    width: 600px;
-    height: 800px;
+    width: 700px;
+    height: auto;
     margin: auto;
     align-items: center;
+    text-align:center;
 }
 
 #divInputs {
