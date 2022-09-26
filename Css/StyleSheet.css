@@ -2,7 +2,7 @@
     display: flex;
     border: 2px solid blue;
     flex-flow: column;
-    width: 700px;
+    width: auto;
     height: auto;
     margin: auto;
     align-items: center;
@@ -28,4 +28,10 @@ h1 {
 .box0, .box {
     margin: auto;
     color: grey;
+}
+
+
+#divPrevisualizar {
+    align-content: center;
+    margin-top: 15px;
 }

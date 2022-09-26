@@ -17,3 +17,16 @@ window.oninput = function(event){
       document.querySelector('#a').value = document.getElementById('_userSobrenome').value;
    }
 };
+
+
+function preVizualizar(){
+
+    var box = document.getElementById('imgSelect');
+    conceptName = box.options[box.selectedIndex].text;
+
+    document.getElementById("_imgFundo").innerHTML ="Img/garrafa-fundo.jpg"
+
+
+}
+
+

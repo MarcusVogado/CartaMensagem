@@ -4,15 +4,12 @@
 <head>
     <meta charset="utf-8" />
     <title>MENSAGENS</title>
-
     <link rel="stylesheet" href="Css/StyleSheet.css" />
     <script type="text/javascript" src="Js/Script.js"></script>
-
 </head>
 <body>
 
     <h1>ENVIE SUA MENSAGEM </h1>
-
     <div id="Inputs">
         <div id="divInputs">
             <label id="Label"> NOME: </label>
@@ -20,15 +17,15 @@
         </div>
         <div id="divInputs">
             <label> SOBRENOME: </label>
-            <input type="text" id="_userSobrenome" />
+            <input type="text" id="_userSobrenome" maxlength="30" />
         </div>
         <div id="divInputs">
             <label> IDADE: </label>
-            <input type="number" id="_userIdade" />
+            <input type="number" id="_userIdade" maxlength="3"/>
         </div>
         <div id="divInputs">
             <label>TITÚLO: </label>
-            <input type="text" id="_titulo" />
+            <input type="text" id="_titulo"  maxlength="50"/>
         </div>
         <div id="divInputs">
             <label> MENSAGEM: </label>
@@ -41,10 +38,9 @@
             <label for="masculino">MASCULINO</label>
             <input type="radio" id="_" name="fav_sexo" value="FEMININO">
             <label for="feminino">FEMININO</label><br>
-
             <h1>ESCOLHA UMA IMAGEM DE FUNDO PARA SUA MENSAGEM</h1>
             <label>
-                <input type="radio" name="imgSelect" value="_fundoAzul" checked>
+                <input type="radio" name="imgSelect" value="_fundoAzul">
                 <img src="Img/FundoAzul-Madeira.jpg" style="width:200px; height:150px;" alt="Option 1">
             </label>
             <label>
@@ -59,8 +55,21 @@
                 <input type="radio" name="imgSelect" value="_textura">
                 <img src="Img/textura.jpg" alt="Option 3" style="width:200px; height:150px;">
             </label>
+            <br />
+            <br />
+            <div>
+                <button title="button" onclick="preVizualizar()" style="width:200px; height:80px;">PRÉ VIZUALIZAR CARTA </button>
+            </div>
+            <br />
+            <div id="Inputs">
+                <div>
+                    <img id="_imgFundo" />
+                </div>
+            </div>
 
         </div>
+
+       
 
         
     </div>
