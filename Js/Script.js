@@ -1,6 +1,17 @@
 // JavaScript source code
 document.addEventListener("DOMContentLoaded", () => {
-        
+
+    document.getElementById('_userName').addEventListener('keyup', function () {
+
+        this.value = this.value.replace(/[0-9]*/g, '');
+
+    });
+    document.getElementById('_userSobrenome').addEventListener('keyup', function () {
+
+        this.value = this.value.replace(/[0-9]*/g, '');
+
+    });
+
 });
 
 
@@ -9,8 +20,8 @@ window.oninput = function Atualizar (event) {
 
     var campo = event.target.id; 
 
-    if (campo == "_userName") {              
-
+    if (campo == "_userName") {
+        
         document.querySelector('#_userNamePre').innerHTML = document.getElementById('_userName').value;
     } else if (campo == "_userSobrenome") {
         document.querySelector('#_userSobrePre').innerHTML = document.getElementById('_userSobrenome').value;
@@ -44,6 +55,7 @@ window.oninput = function Atualizar (event) {
             document.getElementById("_imgFundo").style.backgroundImage = "url('Img/FundoAzul-Madeira.jpg')";
         }
         else if (imgSelect == "_fundoBranco") {
+            document.getElementById("_msgPre").style.color = "blue";
             document.getElementById("_imgFundo").style.backgroundImage = "url('Img/FundoBranco-Red.jpg')";
         }
         else if (imgSelect == "_garrafa") {
