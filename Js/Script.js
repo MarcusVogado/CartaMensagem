@@ -1,32 +1,58 @@
 // JavaScript source code
 document.addEventListener("DOMContentLoaded", () => {
-
-    
-
-
+        
 });
 
 
-window.oninput = function(event){
-   
-   var campo = event.target.id; // pega o id do campo que chamou o evento
-   
-   if(campo == "_userName"){
-      document.querySelector('#a-1').value = document.getElementById('_userName').value;
-   }else if(campo == "_userSobrenome"){
-      document.querySelector('#a').value = document.getElementById('_userSobrenome').value;
-   }
+
+window.oninput = function Atualizar (event) {
+
+    var campo = event.target.id; 
+
+    if (campo == "_userName") {              
+
+        document.querySelector('#_userNamePre').innerHTML = document.getElementById('_userName').value;
+    } else if (campo == "_userSobrenome") {
+        document.querySelector('#_userSobrePre').innerHTML = document.getElementById('_userSobrenome').value;
+    }
+    else if (campo == "_titulo") {
+        document.querySelector('#_tituloPre').innerHTML = document.getElementById('_titulo').value;
+    }
+    else if (campo == "_msg") {
+        document.querySelector('#_msgPre').innerHTML = document.getElementById('_msg').value;
+    }
+
+    else if (campo == "_userSexo") {
+        var sexoSelect = document.querySelector('input[name="_selectSexo"]:checked').value;
+
+        if (sexoSelect == "MASCULINO") {
+
+            document.getElementById("_userSexoPre").innerHTML = "PREZADO"
+        }
+        else {
+            document.getElementById("_userSexoPre").innerHTML = "PREZADA"
+        }
+    }
+
+    else if (campo == "_imgSelect") {
+
+        var imgSelect = document.querySelector('input[name="_imgSelect"]:checked').value;
+
+        if (imgSelect == "_fundoAzul") {
+
+            document.getElementById("_userNamePre").style.color = "red";
+            document.getElementById("_imgFundo").style.backgroundImage = "url('Img/FundoAzul-Madeira.jpg')";
+        }
+        else if (imgSelect == "_fundoBranco") {
+            document.getElementById("_imgFundo").style.backgroundImage = "url('Img/FundoBranco-Red.jpg')";
+        }
+        else if (imgSelect == "_garrafa") {
+            document.getElementById("_imgFundo").style.backgroundImage = "url('Img/garrafa-fundo.jpg')";
+        }
+        else if (imgSelect == "_textura") {
+            document.getElementById("_imgFundo").style.backgroundImage = "url('Img/textura.jpg')";
+        }
+    }
+
 };
-
-
-function preVizualizar(){
-
-    var box = document.getElementById('imgSelect');
-    conceptName = box.options[box.selectedIndex].text;
-
-    document.getElementById("_imgFundo").innerHTML ="Img/garrafa-fundo.jpg"
-
-
-}
-
 

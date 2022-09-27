@@ -21,60 +21,64 @@
         </div>
         <div id="divInputs">
             <label> IDADE: </label>
-            <input type="number" id="_userIdade" maxlength="3"/>
+            <input type="number" id="_userIdade" maxlength="3" />
         </div>
         <div id="divInputs">
             <label>TITÚLO: </label>
-            <input type="text" id="_titulo"  maxlength="50"/>
+            <input type="text" id="_titulo" maxlength="50" />
         </div>
         <div id="divInputs">
             <label> MENSAGEM: </label>
         </div>
         <div>
-            <textarea id="msg" style="width:400px; height:200px; font-size:15px;" maxlength="200"></textarea>
+            <textarea id="_msg" style="width:400px; height:200px; font-size:15px;" maxlength="200"></textarea>
         </div>
         <div id="divInputs">
-            <input type="radio" id="userMasculino" name="fav_sexo" value="MASCULINO">
+            <input type="radio" id="_userSexo" name="_selectSexo" value="MASCULINO">
             <label for="masculino">MASCULINO</label>
-            <input type="radio" id="_" name="fav_sexo" value="FEMININO">
+            <input type="radio" id="_userSexo" name="_selectSexo" value="FEMININO">
             <label for="feminino">FEMININO</label><br>
             <h1>ESCOLHA UMA IMAGEM DE FUNDO PARA SUA MENSAGEM</h1>
             <label>
-                <input type="radio" name="imgSelect" value="_fundoAzul">
-                <img src="Img/FundoAzul-Madeira.jpg" style="width:200px; height:150px;" alt="Option 1">
+                <input type="radio" name="_imgSelect" value="_fundoAzul" id="_imgSelect">
+                <img src="Img/FundoAzul-Madeira.jpg" alt="Option 1" style="width:200px; height:150px;">
             </label>
             <label>
-                <input type="radio" name="imgSelect" value="_fundoBranco">
+                <input type="radio" name="_imgSelect" value="_fundoBranco" id="_imgSelect">
                 <img src="Img/FundoBranco-Red.jpg" alt="Option 2" style="width:200px; height:150px;">
             </label>
             <label>
-                <input type="radio" name="imgSelect" value="_garrafa">
+                <input type="radio" name="_imgSelect" value="_garrafa" id="_imgSelect">
                 <img src="Img/garrafa-fundo.jpg" alt="Option 3" style="width:200px; height:150px;">
             </label>
             <label>
-                <input type="radio" name="imgSelect" value="_textura">
-                <img src="Img/textura.jpg" alt="Option 3" style="width:200px; height:150px;">
+                <input type="radio" name="_imgSelect" value="_textura" id="_imgSelect">
+                <img src="Img/textura.jpg" alt="Option 4" style="width:200px; height:150px;">
             </label>
             <br />
             <br />
             <div>
-                <button title="button" onclick="preVizualizar()" style="width:200px; height:80px;">PRÉ VIZUALIZAR CARTA </button>
+                <h1>PRÉ VIZUALIZAR MENSAGEM</h1>
             </div>
             <br />
-            <div id="Inputs">
-                <div>
-                    <img id="_imgFundo" />
+            <div id="divInputs">
+                <div id="_imgFundo" class="box" style="background-size:400px 400px; background-repeat:no-repeat;">
+
+                    <div>
+                        <label id="_userSexoPre"></label>
+                        <p id="_userNamePre" style="margin:10px"></p><br><br>
+                    </div>
+                    <div>
+                        <p id="_userSobrePre" style="margin:10px"> </p>
+                        <h2 id="_tituloPre" style="margin:10px"> </h2>
+                        <p id="_msgPre" style=" text-align:center;margin:auto; width:300px; height:200px"> </p>
+                    </div>
+                    
                 </div>
             </div>
-
         </div>
-
-       
-
-        
     </div>
-    <h2>Este campo é diretamente automático</h2>
 
-    <input type="text" id="a"> oninput: <input type="text" id="a-1"><br><br>
+
 </body>
 </html>
